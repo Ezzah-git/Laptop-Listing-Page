@@ -1,0 +1,109 @@
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.skeleton-header {
+  height: 40px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skeleton-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skeleton-image {
+  aspect-ratio: 4/3;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 12px;
+}
+
+.skeleton-content {
+  padding: 20px;
+}
+
+.skeleton-title {
+  height: 40px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skeleton-price {
+  height: 30px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+.skeleton-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.skeleton-spec-item {
+  height: 80px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 8px;
+}
+
+.skeleton-seller {
+  height: 120px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.skeleton-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-btn {
+  height: 45px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .skeleton-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skeleton-specs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
